@@ -67,6 +67,14 @@ return [
             'block_for' => null,
         ],
 
+        'backup-server-redis' => [
+            'driver' => 'redis',
+            'connection' => 'default',
+            'queue' => env('REDIS_QUEUE', 'default'),
+            'retry_after' => \Carbon\CarbonInterval::day(1)->totalSeconds,
+            'block_for' => null,
+        ],
+
     ],
 
     /*
