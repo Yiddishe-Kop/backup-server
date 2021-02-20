@@ -10,11 +10,11 @@ class BackupController extends Controller
 {
     public function index()
     {
-        return Backup::paginate();
+        return Backup::latest()->paginate();
     }
 
     public function logs()
     {
-        return BackupLogItem::paginate(20);
+        return BackupLogItem::latest()->paginate(20);
     }
 }
