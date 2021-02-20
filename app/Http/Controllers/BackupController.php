@@ -15,6 +15,6 @@ class BackupController extends Controller
 
     public function logs()
     {
-        return BackupLogItem::paginate();
+        return BackupLogItem::paginate(20);
     }
 }
