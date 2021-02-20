@@ -16,4 +16,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('backups', [BackupController::class, 'index']);
-Route::get('backups/logs', [BackupController::class, 'logs']);
+Route::get('backups/{backup}/logs', [BackupController::class, 'logs']);

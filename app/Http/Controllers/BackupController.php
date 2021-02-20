@@ -13,8 +13,8 @@ class BackupController extends Controller
         return Backup::latest()->paginate();
     }
 
-    public function logs()
+    public function logs(Backup $backup)
     {
-        return BackupLogItem::latest()->paginate(20);
+        return $backup->logItems()->paginate(20);
     }
 }
