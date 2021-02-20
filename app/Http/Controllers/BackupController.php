@@ -15,6 +15,6 @@ class BackupController extends Controller
 
     public function logs(Backup $backup)
     {
-        return $backup->logItems()->paginate(20);
+        return $backup->logItems;
     }
 }
