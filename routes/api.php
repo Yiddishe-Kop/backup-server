@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BackupController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,5 +15,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('backups', 'BackupController@index');
-Route::get('backups/logs', 'BackupController@logs');
+Route::get('backups', [BackupController::class, 'index']);
+Route::get('backups/logs', [BackupController::class, 'logs']);
