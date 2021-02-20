@@ -23,20 +23,20 @@ return [
          * can be sent.
          */
         'notifications' => [
-            \Spatie\BackupServer\Notifications\Notifications\BackupCompletedNotification::class => ['mail', 'slack'],
+            \Spatie\BackupServer\Notifications\Notifications\BackupCompletedNotification::class => ['slack'],
             \Spatie\BackupServer\Notifications\Notifications\BackupFailedNotification::class => ['mail', 'slack'],
 
-            \Spatie\BackupServer\Notifications\Notifications\CleanupForSourceCompletedNotification::class => ['mail', 'slack'],
+            \Spatie\BackupServer\Notifications\Notifications\CleanupForSourceCompletedNotification::class => ['slack'],
             \Spatie\BackupServer\Notifications\Notifications\CleanupForSourceFailedNotification::class => ['mail', 'slack'],
-            \Spatie\BackupServer\Notifications\Notifications\CleanupForDestinationCompletedNotification::class => ['mail', 'slack'],
+            \Spatie\BackupServer\Notifications\Notifications\CleanupForDestinationCompletedNotification::class => ['slack'],
             \Spatie\BackupServer\Notifications\Notifications\CleanupForDestinationFailedNotification::class => ['mail', 'slack'],
 
-            \Spatie\BackupServer\Notifications\Notifications\HealthySourceFoundNotification::class => ['mail', 'slack'],
+            \Spatie\BackupServer\Notifications\Notifications\HealthySourceFoundNotification::class => ['slack'],
             \Spatie\BackupServer\Notifications\Notifications\UnhealthySourceFoundNotification::class => ['mail', 'slack'],
-            \Spatie\BackupServer\Notifications\Notifications\HealthyDestinationFoundNotification::class => ['mail', 'slack'],
+            \Spatie\BackupServer\Notifications\Notifications\HealthyDestinationFoundNotification::class => ['slack'],
             \Spatie\BackupServer\Notifications\Notifications\UnhealthyDestinationFoundNotification::class => ['mail', 'slack'],
 
-            \Spatie\BackupServer\Notifications\Notifications\ServerSummaryNotification::class => ['mail', 'slack'],
+            \Spatie\BackupServer\Notifications\Notifications\ServerSummaryNotification::class => ['slack'],
         ],
 
         /*
