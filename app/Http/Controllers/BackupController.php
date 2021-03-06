@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Spatie\BackupServer\Models\Backup;
-use Spatie\BackupServer\Models\BackupLogItem;
 
 class BackupController extends Controller
 {
