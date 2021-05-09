@@ -25,8 +25,8 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         $schedule->command('backup-server:dispatch-backups')->hourly();
-        $schedule->command('backup-server:cleanup')->daily();
-        $schedule->command('backup-server:monitor')->daily();
+        $schedule->command('backup-server:cleanup')->dailyAt('4:00');
+        $schedule->command('backup-server:monitor')->daily('4:10');
     }
 
     /**
